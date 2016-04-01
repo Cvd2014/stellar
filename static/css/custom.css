@@ -1,0 +1,33 @@
+.navbar {
+    background-image: url(backing.jpg)
+}
+
+html{
+    background-image: url(desktop-planetary-backgrounds-dowload.jpg);
+    opacity: 0.8;
+}
+
+#outer{
+    background-color: grey;
+    color: whitesmoke;
+    padding:0px;
+}
+#NumberPlanets{
+    background-color: #d58512;
+    font-size: 40px;
+    font-weight: 400;
+    font-family: 'Ubuntu', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', sans-serif;
+    color: darkred;
+}
+
+#mission{
+    font-family: 'Ubuntu', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', sans-serif;
+}
+
+.choice{
+    color: #5e5e5e;
+    font-family: 'Ubuntu', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', sans-serif;
+}
+.choice h2{
+    color: whitesmoke;
+}

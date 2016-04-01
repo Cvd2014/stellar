@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Catalogue of Exoplanets</title>
+    <link rel="stylesheet" href="../static/lib/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/lib/css/keen-dashboards.css">
+    <link rel="stylesheet" href="../static/lib/css/dc.css">
+    <link rel="stylesheet" href="../static/css/custom.css">
+</head>
+<body class="application">
+    <header class=" navbar navbar-inverse navbar-fixed-top row">
+        <nav class="navbar-header col-sm-8">
+            <a class="navbar-brand" href="./">Exoplanetary Cataloguing Dashboard</a>
+        </nav>
+         <button class="intro_button col-sm-2 col-sm-offset-2" type="button" autofocus onclick="javascript:IntroJs().start();">StartTour!</button>
+    </header>
+    <section id="outer" class="container-fluid">
+        <section class="row">
+            <div class="col-sm-12">
+                <div class="row">
+                    <div class="col-sm-8 data-step='1' data-intro='A plot of all accepted stars from the catalogued plotted via their distance from their star and the stars Luminosity. It also plots the Density and size of the star' data-position='right'">
+                        <h2>Planets by size and distance to Parent Star</h2>
+                        <div id='group'>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class = "col-sm-3 data-step='2' data-intro='A plot of the number of stars discovered by accepted Misssions ' data-position='right'">
+                        <h2>Planets by Mission</h2>
+                        <div id= 'mission'></div>
+                    </div>
+
+                    <div class="col-sm-3 col-sm-offset-1 data-step='3' data-intro='A visual graphic of the method of finding stars' data-position='right'">
+                        <h2>Method of Discovery</h2>
+                        <div id='method'></div>
+                    </div>
+
+                    <div class="col-sm-3 col-sm-offset-1 data-step='4' data-intro='A graphic of the number of stars discovered each year' data-position='right'">
+                        <h2>Year of Discovery</h2>
+                        <div id='year'></div>
+                    </div>
+
+                </div><!--close Row-->
+
+                <div class="row">
+                    <div class="col-sm-4 data-step='5' data-intro='The number of stars discovered per selected parameters' data-position='right'">
+                        <h2>Number of Planets</h2>
+                        <div id='NumberPlanets'>
+                        </div>
+                    </div>
+                    <div  class="choice col-sm-2 col-sm-offset-1">
+                        <h2>Choose Year Discovered </h2>
+                        <div id="menu-select-year"></div>
+                    </div>
+                    <div class="choice col-sm-2 col-sm-offset-1 ">
+                        <h2>Choose Star</h2>
+                        <div id="menu-select-star"></div>
+                    </div>
+
+                </div>
+            </div>
+        </section><!-- close top row-->
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+<hr>
+<p class ="small text-muted">Data viz &#9829; from <a>Ciaran Darcy</a></p>
+<p class="small text-muted">Data from <a href="http://www.exoplanets.org">Exoplanets.org</a></p>
+
+<script src="../static/lib/js/jquery.min.js"></script>
+<script src="../static/lib/js/bootstrap.min.js"></script>
+<script src="../static/lib/js/crossfilter.js"></script>
+<script src="../static/lib/js/d3.js"></script>
+<script src="../static/lib/js/dc.js"></script>
+<script src="../static/lib/js/queue.js"></script>
+<script src="../static/lib/js/keen.min.js"></script>
+<script src="../static/js/graph.js" type="text/javascript"></script>
+</body>
+</html>
