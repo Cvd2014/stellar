@@ -6,7 +6,8 @@ app = Flask(__name__)
 MONGOD_HOST = "localhost"
 MONGOD_PORT = 27017
 
-DBS_NAME = 'planets'
+DBS_NAME = 'heroku_wdw3svkz'
+MONGOD_URI='mongodb://Cvd2016:baseball1@ds011880.mlab.com:11880/heroku_wdw3svkz'
 COLLECTION_NAME = 'foundPlanets'
 
 FIELDS = {'NAME': True, 'STAR': True, 'PER': True, 'MASS': True, 'SEP': True, 'R': True, 'PLANETDISCMETH': True,
@@ -20,7 +21,7 @@ def index():
 
 @app.route('/planetsList/planets')
 def planetary_dash():
-    connection = MongoClient(MONGOD_HOST, MONGOD_PORT)
+    connection = MongoClient(MONGOD_URI)
     collection = connection[DBS_NAME][COLLECTION_NAME]
     projects = collection.find(projection=FIELDS)
     json_projects = []
