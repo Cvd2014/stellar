@@ -131,8 +131,8 @@ function makeGraphs(error, planetsJson) {
 
 
     methodChart.height(400)
-        .radius(125)
-        .innerRadius(100)
+        .radius(100)
+        .innerRadius(75)
         .dimension(methodDim)
         .group(planetsByMethod);
 
