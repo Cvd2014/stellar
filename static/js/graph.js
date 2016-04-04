@@ -122,7 +122,7 @@ function makeGraphs(error, planetsJson) {
     hitslineChart
         .width(1200).height(400)
         .dimension(maxxdim)
-        .x(d3.scale.linear().domain([0,3000]))
+        .x(d3.scale.linear().domain([0,8]))
         .compose([
             dc.lineChart(hitslineChart)
                 .group(minygroup),
