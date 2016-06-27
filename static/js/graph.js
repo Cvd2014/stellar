@@ -21,23 +21,11 @@ function makeGraphs(error, planetsJson) {
         console.log(filter + "(" + f.length + ")=" + JSON.stringify(f).replace("[", "[\n\t").replace(/},/g, "},\n\t").replace("]", "\n]"));
     }
 
-    var data = planetsJson;
-
-    var basezone = [0.5, 1, 2, 4, 8, 16, 32, 64, 128, 256];
-    var data2=[{"minX":.44, "maxX":1.6,"minX":.1936,"maxX":2.56},
-                {"minX":.88, "maxX":3.2,"minX":.7744,"maxX":10.24},
-                {"minX":1.76, "maxX":6.4,"minX":3.09,"maxX":40.96},
-                {"minX":3.32, "maxX":12.8,"minX":11.02,"maxX":163.84},
-                {"minX":6.64, "maxX":25.6,"minX":44.09,"maxX":655.36},
-                {"minX":13.28, "maxX":51.2,"minX":176.5,"maxX":2621.44},
-                {"minX":26.56, "maxX":102.4,"minX":705.43,"maxX":10485.76}];
+    var planetdata = planetsJson;
+    // Some of the parameters here ar not used due to the changing of some graphing areas. This will be fixed in later iterations of this code
 
 
-
-
-
-
-    var ndx = crossfilter(data);
+    var ndx = crossfilter(planetdata);
     var ndx2 = crossfilter(data2);
 
     var minxdim = ndx2.dimension(function (d) {
